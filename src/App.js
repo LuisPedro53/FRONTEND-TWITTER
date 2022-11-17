@@ -14,7 +14,7 @@ function App() {
 
   function getTrends (){
     axios
-      .get('https://teste-backend-api-twitter.herokuapp.com/api/trends',{
+      .get('https://backendtest-123.herokuapp.com/api/trends',{
        params:{
         woeid,
        } 
@@ -31,7 +31,7 @@ function App() {
       navigator.geolocation.getCurrentPosition(
         position => {
           axios
-            .get('https://teste-backend-api-twitter.herokuapp.com/api/near-me',{
+            .get('https://backendtest-123.herokuapp.com/api/near-me',{
               params:{
                 lat: position.coords.latitude,
                 long:position.coords.longitude,
